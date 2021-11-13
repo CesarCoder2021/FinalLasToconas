@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: visible;
+}
+
+// Paleta de Colores basicos
+$colorBase1: white;
+$colorBase2: black;
+$colorBase3: rgb(199, 21, 133); //#c71585
+$colorBase4: rgb(0, 0, 205); // #0000cd
+$colorBase5: rgb(255, 69, 0); // #ff3c00
+// Fonts
+$font1: "Roboto Slab";
+$font2: "Raleway";
+$font3: "Bad Script";
+
+// Titulos
+h3 {
+  font-family: $font2;
+  font-size: 1rem;
+  color: $colorBase1;
+}
+
+// Estilo Navbar
+.navIndex {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: $colorBase3;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    color: $colorBase1;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  li {
+    padding: 2px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-top: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+  a {
+    color: $colorBase1;
+  }
+  a:hover {
+    color: $colorBase4;
+  }
+}
+
+//Estilo footer
+
+.footerIndex {
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  background-color: $colorBase3;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    color: $colorBase1;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  li {
+    padding: 2px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slideon;
+  }
+  @keyframes slideon {
+    from {
+      margin-bottom: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-bottom: 0%;
+      opacity: 1;
+    }
+  }
+  a {
+    color: $colorBase1;
+  }
+  a:hover {
+    color: $colorBase4;
+  }
+}

@@ -1,0 +1,925 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: visible;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: 1rem;
+  color: white;
+}
+
+.navIndex {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: mediumvioletred;
+}
+.navIndex ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navIndex li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navIndex a {
+  color: white;
+}
+.navIndex a:hover {
+  color: mediumblue;
+}
+
+.footerIndex {
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  background-color: mediumvioletred;
+}
+.footerIndex ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footerIndex li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerIndex a {
+  color: white;
+}
+.footerIndex a:hover {
+  color: mediumblue;
+}
+
+.navBlog {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: mediumblue;
+}
+.navBlog ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navBlog li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navBlog a {
+  color: white;
+}
+.navBlog a:hover {
+  color: orangered;
+}
+
+.blogBody {
+  width: 100%;
+  height: max-content;
+  background-image: url(../images/Blog/FotoFondoBlog_Filtro.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogBody h3 {
+  font-family: "Raleway";
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  animation-duration: 3s;
+  animation-name: titleBlog;
+  margin-top: 1em;
+}
+@keyframes titleBlog {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.blogBody a {
+  color: white;
+}
+.blogBody a:hover {
+  color: white;
+}
+
+main.cards {
+  display: flex;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  max-height: 20rem;
+  margin-left: 2rem;
+  width: 90%;
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .icon {
+  width: 20rem;
+  height: 20rem;
+  color: mediumblue;
+  font-size: 6em;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: mediumblue;
+}
+
+main.cards section.card span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  max-width: 20rem;
+  font-size: 1rem;
+  color: mediumblue;
+  margin-bottom: 1rem;
+}
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+main.cards section.card.blog button {
+  background: linear-gradient(to right, mediumblue, black);
+}
+
+main.cards section.card.prod button {
+  background: linear-gradient(to right, orangered, black);
+}
+
+main.cards section.card.video button {
+  background: linear-gradient(to right, mediumvioletred, black);
+}
+
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
+  }
+
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+  main.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+
+  main.cards section.card button {
+    font-size: 70%;
+  }
+}
+.footerBlog {
+  width: 100%;
+  padding: 1rem;
+  background-color: mediumblue;
+  position: fixed;
+  bottom: 0;
+}
+.footerBlog ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footerBlog li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerBlog a {
+  color: white;
+}
+.footerBlog a:hover {
+  color: orangered;
+}
+
+@media (min-width: 1024px) {
+  main.cards {
+    flex-direction: row;
+    width: 90%;
+    padding-bottom: 4.5em;
+  }
+
+  .blogBody {
+    width: 100%;
+    height: 100vh;
+  }
+
+  h3 {
+    font-size: 4em;
+  }
+}
+.navProd {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: orangered;
+}
+.navProd ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navProd li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navProd a {
+  color: white;
+}
+.navProd a:hover {
+  color: black;
+}
+
+.prodBody {
+  width: 100%;
+  height: max-content;
+  background-image: url(../images/Producto/FotoProd_filtro.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.titleProd {
+  font-family: "Raleway";
+  font-size: 3em;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: titleProd;
+}
+
+@keyframes titleProd {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.seccProd {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.seccProd h3 {
+  font: "Raleway";
+  color: black;
+  font-size: 2.5em;
+  padding: 2em 0em 1em 0em;
+  text-align: center;
+}
+.seccProd h4 {
+  font: "Bad Script";
+  color: black;
+  font-size: 2em;
+  padding: 0em 0em 1em 0em;
+  text-align: center;
+}
+.seccProd p {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+.seccProd div {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.botonProd {
+  background: white;
+  color: orangered;
+  font-family: Arial;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 0.2rem solid orangered;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.botonProd:hover {
+  color: white;
+  border-color: white;
+}
+
+.botonProd::after {
+  content: "";
+  background: orangered;
+  position: absolute;
+  z-index: -1;
+  padding: 1rem 2rem;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+
+.botonProd:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(45deg) scale(1, 1);
+}
+
+.footerProd {
+  width: 100%;
+  padding: 1rem;
+  background-color: orangered;
+  position: fixed;
+  bottom: 0;
+}
+.footerProd ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footerProd li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerProd a {
+  color: white;
+}
+.footerProd a:hover {
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .titleProd {
+    font-size: 4em;
+  }
+
+  .seccProd h3 {
+    font-size: 4em;
+  }
+}
+.index {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/FotoFondoIndex_filtro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+
+.grande {
+  font-family: "Roboto Slab";
+  font-weight: 200;
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  padding: 1em 0em 0em 0em;
+  animation-duration: 2s;
+  animation-name: title;
+}
+
+@keyframes title {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.chico {
+  font-family: "Bad Script";
+  color: white;
+  font-size: 2em;
+  animation-duration: 3s;
+  animation-name: titleMin;
+}
+
+@keyframes titleMin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logoIndex {
+  animation-duration: 4s;
+  animation-name: fadeinLogo;
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .grande {
+    font-size: 7em;
+  }
+
+  .chico {
+    font-size: 3em;
+  }
+}
+.navNos {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+}
+.navNos ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navNos li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navNos a {
+  color: mediumvioletred;
+}
+.navNos a:hover {
+  color: orangered;
+}
+
+.nosBody {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/Nosotros/FotoFondoNos_filtro.jpg);
+  background-repeat: none;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nosBody p {
+  width: 70%;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: mediumvioletred;
+  margin: 1em;
+  margin-bottom: 4em;
+}
+
+.titleNos {
+  font-family: "Raleway";
+  font-size: 2em;
+  color: mediumvioletred;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  animation-duration: 2s;
+  animation-name: titleNos;
+}
+
+@keyframes titleNos {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.footerNos {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+.footerNos ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footerNos li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerNos a {
+  color: mediumvioletred;
+}
+.footerNos a:hover {
+  color: orangered;
+}
+
+@media (min-width: 1024px) {
+  .titleNos {
+    font-size: 4em;
+  }
+
+  .nosBody p {
+    font-size: 2rem;
+  }
+}
+.navContact {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: black;
+}
+.navContact ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.navContact li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navContact a {
+  color: white;
+}
+.navContact a:hover {
+  color: mediumblue;
+}
+
+.contactBody {
+  width: 100%;
+  height: max-content;
+  background-image: url(../images/Contacto/backContacto.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 4em;
+}
+.contactBody h3 {
+  font-family: "Raleway";
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  animation-duration: 3s;
+  animation-name: titleContact;
+}
+@keyframes titleContact {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.contactBody a {
+  color: white;
+}
+.contactBody a:hover {
+  color: mediumblue;
+}
+.contactBody div {
+  width: 90%;
+  height: 80%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: white;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactBody div ul {
+  list-style: none;
+}
+
+.rrSocial {
+  width: 90%;
+  height: auto;
+  padding-bottom: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+.rrSocial ul {
+  list-style: none;
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.rrSocial ul li {
+  text-align: center;
+  padding: 0em 1em 0em 1em;
+}
+
+.footerContact {
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+}
+.footerContact ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footerContact li {
+  padding: 2px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerContact a {
+  color: white;
+}
+.footerContact a:hover {
+  color: mediumblue;
+}
+
+@media (min-width: 1024px) {
+  .contactBody {
+    width: 100%;
+    height: 100vh;
+  }
+  .contactBody h3 {
+    font-size: 4em;
+    padding-top: 6em;
+  }
+  .contactBody div {
+    font-size: 1.5em;
+    flex-direction: row;
+    padding-top: 2em;
+  }
+
+  .rrSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 4em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-size: 1rem;
+  color: white;
+}
+
+.navIndex {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: mediumvioletred;
+}
+.navIndex ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navIndex li {
+  padding: 2px;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navIndex a {
+  color: white;
+}
+.navIndex a:hover {
+  color: mediumblue;
+}
+
+.footerIndex {
+  width: 100%;
+  padding: 1rem;
+  background-color: mediumvioletred;
+}
+.footerIndex ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footerIndex li {
+  padding: 2px;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideon;
+          animation-name: slideon;
+}
+@-webkit-keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerIndex a {
+  color: white;
+}
+.footerIndex a:hover {
+  color: mediumblue;
+}
+
+.index {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/FotoFondoIndex_filtro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grande {
+  font-family: "Roboto Slab";
+  font-weight: 200;
+  font-size: 7em;
+  color: white;
+  padding: 1em 0em 0em 0em;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: title;
+          animation-name: title;
+}
+
+@-webkit-keyframes title {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.chico {
+  font-family: "Bad Script";
+  color: white;
+  font-size: 3em;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: titleMin;
+          animation-name: titleMin;
+}
+
+@-webkit-keyframes titleMin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes titleMin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logoIndex {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: fadeinLogo;
+          animation-name: fadeinLogo;
+}
+
+@-webkit-keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navNos {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+}
+.navNos ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navNos li {
+  padding: 2px;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navNos a {
+  color: mediumvioletred;
+}
+.navNos a:hover {
+  color: orangered;
+}
+
+.nosBody {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/Nosotros/FotoFondoNos_filtro.jpg);
+  background-repeat: none;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nosBody p {
+  width: 70%;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: mediumvioletred;
+  margin: 1em;
+}
+
+.titleNos {
+  font-family: "Raleway";
+  font-size: 4em;
+  color: mediumvioletred;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.footerNos {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+.footerNos ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footerNos li {
+  padding: 2px;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideon;
+          animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerNos a {
+  color: mediumvioletred;
+}
+.footerNos a:hover {
+  color: orangered;
+}
+
+.navContact {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: black;
+}
+.navContact ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navContact li {
+  padding: 2px;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+.navContact a {
+  color: white;
+}
+.navContact a:hover {
+  color: mediumblue;
+}
+
+.contactBody {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/Contacto/backContacto.jpg);
+  background-repeat: none;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+}
+.contactBody h3 {
+  font-family: "Raleway";
+  font-size: 4em;
+  color: white;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+.contactBody div {
+  width: 90%;
+  height: 60%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: white;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.rrSocial {
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 2rem;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.footerContact {
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+}
+.footerContact ul {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  color: mediumvioletred;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footerContact li {
+  padding: 2px;
+  text-align: center;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideon;
+          animation-name: slideon;
+}
+@keyframes slideon {
+  from {
+    margin-bottom: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 1;
+  }
+}
+.footerContact a {
+  color: white;
+}
+.footerContact a:hover {
+  color: mediumblue;
+}/*# sourceMappingURL=style.css.map */

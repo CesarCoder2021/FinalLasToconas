@@ -1,0 +1,71 @@
+.index {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/FotoFondoIndex_filtro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+// Titulo Grande
+.grande {
+  font-family: $font1;
+  font-weight: 200;
+  font-size: 4em;
+  text-align: center;
+  color: $colorBase1;
+  padding: 1em 0em 0em 0em;
+  animation-duration: 2s;
+  animation-name: title;
+}
+@keyframes title {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+.chico {
+  font-family: $font3;
+  color: $colorBase1;
+  font-size: 2em;
+  animation-duration: 3s;
+  animation-name: titleMin;
+}
+@keyframes titleMin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logoIndex {
+  animation-duration: 4s;
+  animation-name: fadeinLogo;
+}
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grande {
+    font-size: 7em;
+  }
+  .chico {
+    font-size: 3em;
+  }
+}

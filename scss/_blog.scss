@@ -1,0 +1,245 @@
+// Estilo Navbar
+.navBlog {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: $colorBase4;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    color: $colorBase1;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  li {
+    padding: 2px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-top: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+  a {
+    color: $colorBase1;
+  }
+  a:hover {
+    color: $colorBase5;
+  }
+}
+
+// Estilo Body Blog
+
+.blogBody {
+  width: 100%;
+  height: max-content;
+  background-image: url(../images/Blog/FotoFondoBlog_Filtro.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h3 {
+    font-family: $font2;
+    font-size: 3em;
+    color: $colorBase1;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    animation-duration: 3s;
+    animation-name: titleBlog;
+    margin-top: 1em;
+  }
+
+  @keyframes titleBlog {
+    from {
+      margin-top: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0%;
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: $colorBase1;
+  }
+  a:hover {
+    color: $colorBase1;
+  }
+}
+
+main.cards {
+  display: flex;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $colorBase1;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  max-height: 20rem;
+  margin-left: 2rem;
+  width: 90%;
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .icon {
+  width: 20rem;
+  height: 20rem;
+  color: $colorBase4;
+  font-size: 6em;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  color: $colorBase4;
+}
+
+main.cards section.card span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  max-width: 20rem;
+  font-size: 1rem;
+  color: $colorBase4;
+  margin-bottom: 1rem;
+}
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+main.cards section.card.blog button {
+  background: linear-gradient(to right, $colorBase4, $colorBase2);
+}
+main.cards section.card.prod button {
+  background: linear-gradient(to right, $colorBase5, $colorBase2);
+}
+main.cards section.card.video button {
+  background: linear-gradient(to right, $colorBase3, $colorBase2);
+}
+
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
+  }
+
+  main.cards section.card {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+  main.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+
+  main.cards section.card button {
+    font-size: 70%;
+  }
+}
+
+//Estilo footer
+
+.footerBlog {
+  width: 100%;
+  padding: 1rem;
+  background-color: $colorBase4;
+  position: fixed;
+  bottom: 0;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    color: $colorBase1;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  li {
+    padding: 2px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slideon;
+  }
+  @keyframes slideon {
+    from {
+      margin-bottom: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-bottom: 0%;
+      opacity: 1;
+    }
+  }
+  a {
+    color: $colorBase1;
+  }
+  a:hover {
+    color: $colorBase5;
+  }
+}
+
+@media (min-width: 1024px) {
+  main.cards {
+    flex-direction: row;
+    width: 90%;
+    padding-bottom: 4.5em;
+  }
+  .blogBody {
+    width: 100%;
+    height: 100vh;
+  }
+  h3 {
+    font-size: 4em;
+  }
+}
